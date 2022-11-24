@@ -17,7 +17,7 @@ const app = express()
 const port = 2000;
 const host = '0.0.0.0';
 
-mongoose.connect("mongodb+srv://abdullah:Aa123456789@cluster0.tjvij7f.mongodb.net/Twitter?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://abdullah:*************@cluster0.tjvij7f.mongodb.net/Twitter?retryWrites=true&w=majority")
 app.use(bodyParser.json({limit: '30mb', extended: true}))
 app.use(bodyParser.urlencoded({limit: '30mb', extended: true}))
 app.use('/uploads',express.static('uploads'))
